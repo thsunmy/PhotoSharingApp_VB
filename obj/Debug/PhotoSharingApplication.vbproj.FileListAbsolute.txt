@@ -1,0 +1,118 @@
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\PhotoSharingApplication.dll.config
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\PhotoSharingApplication.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\PhotoSharingApplication.pdb
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\PhotoSharingApplication.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Antlr3.Runtime.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.SqlServer.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.Core.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Cookies.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Facebook.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Google.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.OAuth.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Twitter.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Newtonsoft.Json.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Owin.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Helpers.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Mvc.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Optimization.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Razor.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.Deployment.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.Razor.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\WebGrease.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Helpers.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Mvc.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Optimization.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Razor.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.Deployment.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.Razor.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Antlr3.Runtime.pdb
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Newtonsoft.Json.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.SqlServer.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.Core.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Facebook.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Cookies.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.OAuth.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Google.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Twitter.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.vbprojResolveAssemblyReference.cache
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.Resources.resources
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.vbproj.GenerateResource.Cache
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.dll
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.xml
+D:\temp\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.pdb
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\PhotoSharingApplication.dll.config
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\PhotoSharingApplication.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\PhotoSharingApplication.pdb
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\PhotoSharingApplication.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Antlr3.Runtime.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.SqlServer.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.Core.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Cookies.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Facebook.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Google.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.OAuth.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Twitter.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Newtonsoft.Json.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Owin.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Helpers.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Mvc.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Optimization.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Razor.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.Deployment.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.Razor.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\WebGrease.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Helpers.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Mvc.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Optimization.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.Razor.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.Deployment.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\System.Web.WebPages.Razor.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Antlr3.Runtime.pdb
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Newtonsoft.Json.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.SqlServer.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.Core.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Facebook.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Cookies.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.OAuth.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Google.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.Twitter.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.vbprojResolveAssemblyReference.cache
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.Resources.resources
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.vbproj.GenerateResource.Cache
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.dll
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.xml
+D:\UTAR\UCCA3224 - May 2015\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.pdb
