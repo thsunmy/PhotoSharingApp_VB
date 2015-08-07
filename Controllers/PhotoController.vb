@@ -1,57 +1,120 @@
-﻿Imports System.Web.Mvc
+﻿Imports System
+Imports System.Collections.Generic
+Imports System.Data
+Imports System.Data.Entity
+Imports System.Linq
+Imports System.Net
+Imports System.Web
+Imports System.Web.Mvc
+Imports PhotoSharingApplication
 
 Namespace Controllers
     Public Class PhotoController
-        Inherits Controller
+        Inherits System.Web.Mvc.Controller
+
+        Private db As New PhotoSharingContext
 
         ' GET: Photo
         Function Index() As ActionResult
-            Return View("Index")
+            Return View(db.Photos.ToList())
         End Function
 
+        ' GET: Photo/Details/5
+        Function Details(ByVal id As Integer?) As ActionResult
+            If IsNothing(id) Then
+                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+            End If
+            Dim photo As Photo = db.Photos.Find(id)
+            If IsNothing(photo) Then
+                Return HttpNotFound()
+            End If
+            Return View(photo)
+        End Function
+
+        ' GET: Photo/Create
         Function Create() As ActionResult
-            Dim newPhoto As New Photo()
-
-            newPhoto.CreatedDate = DateTime.Today
-
-            Return View("Create", newPhoto)
+            Return View()
         End Function
 
-        Function Display(photo As Photo) As ActionResult
-
-            Return View("Display", Photo)
+        ' POST: Photo/Create
+        'To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        'more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        <HttpPost()>
+        <ValidateAntiForgeryToken()>
+        Function Create(<Bind(Include:="PhotoID,Title,PhotoFile,ImageMimeType,Description,CreatedDate,UserName")> ByVal photo As Photo) As ActionResult
+            If ModelState.IsValid Then
+                db.Photos.Add(photo)
+                db.SaveChanges()
+                Return RedirectToAction("Index")
+            End If
+            Return View(photo)
         End Function
 
-        <HttpPost> _
-        Function Create(ByVal photo As Photo, ByVal image As HttpPostedFileBase) As ActionResult
+        ' GET: Photo/Edit/5
+        Function Edit(ByVal id As Integer?) As ActionResult
+            If IsNothing(id) Then
+                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+            End If
+            Dim photo As Photo = db.Photos.Find(id)
+            If IsNothing(photo) Then
+                Return HttpNotFound()
+            End If
+            Return View(photo)
+        End Function
 
+        ' POST: Photo/Edit/5
+        'To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        'more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        <HttpPost()>
+        <ValidateAntiForgeryToken()>
+        Function Edit(<Bind(Include:="PhotoID,Title,PhotoFile,ImageMimeType,Description,CreatedDate,UserName")> ByVal photo As Photo) As ActionResult
+            If ModelState.IsValid Then
+                db.Entry(photo).State = EntityState.Modified
+                db.SaveChanges()
+                Return RedirectToAction("Index")
+            End If
+            Return View(photo)
+        End Function
 
-            photo.CreatedDate = DateTime.Today
+        ' GET: Photo/Delete/5
+        Function Delete(ByVal id As Integer?) As ActionResult
+            If IsNothing(id) Then
+                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+            End If
+            Dim photo As Photo = db.Photos.Find(id)
+            If IsNothing(photo) Then
+                Return HttpNotFound()
+            End If
+            Return View(photo)
+        End Function
 
-            If Not (ModelState.IsValid) Then
-                Return View("Create", photo)
+        ' POST: Photo/Delete/5
+        <HttpPost()>
+        <ActionName("Delete")>
+        <ValidateAntiForgeryToken()>
+        Function DeleteConfirmed(ByVal id As Integer) As ActionResult
+            Dim photo As Photo = db.Photos.Find(id)
+            db.Photos.Remove(photo)
+            db.SaveChanges()
+            Return RedirectToAction("Index")
+        End Function
+
+        Public Function GetImage(PhotoId As Integer) As FileContentResult
+            'Get the right photo
+            Dim requestedPhoto As Photo = db.Photos.FirstOrDefault(Function(p) p.PhotoID = PhotoId)
+            If requestedPhoto IsNot Nothing Then
+                Return File(requestedPhoto.PhotoFile, requestedPhoto.ImageMimeType)
             Else
-
-                If Not IsNothing(image) Then
-
-                    photo.ImageMimeType = image.ContentType
-                    photo.PhotoFile = New Byte(image.ContentLength - 1) {}
-                    image.InputStream.Read(photo.PhotoFile, 0, image.ContentLength)
-
-                End If
-
-                Return View("Display", photo)
+                Return Nothing
             End If
         End Function
 
-        Function GetImage(id As Int32) As FileContentResult
 
-            Return Nothing
-
-        End Function
-
-
-          
-
+        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+            If (disposing) Then
+                db.Dispose()
+            End If
+            MyBase.Dispose(disposing)
+        End Sub
     End Class
 End Namespace

@@ -1,44 +1,82 @@
 ﻿@ModelType PhotoSharingApplication.Photo
+
 @Code
-    ViewData("Title") = "Create"
-    Layout = "~/Views/Shared/_Layout.vbhtml"
+    Layout = Nothing
 End Code
 
-<h2>Create</h2>
-@Using (Html.BeginForm("Create", "Photo", FormMethod.Post, New With {Key .enctype = "multipart/form-data"}))
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    @Using (Html.BeginForm()) 
+        @Html.AntiForgeryToken()
         
-    @Html.ValidationSummary(True)
-
-            @<p>
-    @Html.LabelFor(Function(Model) Model.Title):
-    @Html.EditorFor(Function(Model) Model.Title)
-    @Html.ValidationMessageFor(Function(Model) Model.Title)
-            </p>
-
-            @<p>
-    @Html.LabelFor(Function(Model) Model.PhotoFile)
-                <input type="file" name="Image" />
-            </p>
-
-            @<p>
-    @Html.LabelFor(Function(Model) Model.Description):
-    @Html.EditorFor(Function(Model) Model.Description)
-    @Html.ValidationMessageFor(Function(Model) Model.Description)
-            </p>
-
-            @<p>
-    @Html.LabelFor(Function(Model) Model.UserName):
-    @Html.DisplayFor(Function(Model) Model.UserName)
-            </p>
-
-            @<p>
-    @Html.LabelFor(Function(Model) Model.CreatedDate):
-    @Html.DisplayFor(Function(Model) Model.CreatedDate)
-            </p>
-
-            @<p>
-                <input type="submit" value="Create" />
-    @Html.ActionLink("Back to List", "Index")
-            </p>
-End Using
+        @<div class="form-horizontal">
+            <h4>Photo</h4>
+            <hr />
+            @Html.ValidationSummary(True, "", New With { .class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(Function(model) model.Title, htmlAttributes:= New With { .class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(Function(model) model.Title, New With { .htmlAttributes = New With { .class = "form-control" } })
+                    @Html.ValidationMessageFor(Function(model) model.Title, "", New With { .class = "text-danger" })
+                </div>
+            </div>
     
+            <div class="form-group">
+                @Html.LabelFor(Function(model) model.PhotoFile, htmlAttributes:= New With { .class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(Function(model) model.PhotoFile, New With { .htmlAttributes = New With { .class = "form-control" } })
+                    @Html.ValidationMessageFor(Function(model) model.PhotoFile, "", New With { .class = "text-danger" })
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(Function(model) model.ImageMimeType, htmlAttributes:= New With { .class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(Function(model) model.ImageMimeType, New With { .htmlAttributes = New With { .class = "form-control" } })
+                    @Html.ValidationMessageFor(Function(model) model.ImageMimeType, "", New With { .class = "text-danger" })
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(Function(model) model.Description, htmlAttributes:= New With { .class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(Function(model) model.Description, New With { .htmlAttributes = New With { .class = "form-control" } })
+                    @Html.ValidationMessageFor(Function(model) model.Description, "", New With { .class = "text-danger" })
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(Function(model) model.CreatedDate, htmlAttributes:= New With { .class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(Function(model) model.CreatedDate, New With { .htmlAttributes = New With { .class = "form-control" } })
+                    @Html.ValidationMessageFor(Function(model) model.CreatedDate, "", New With { .class = "text-danger" })
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(Function(model) model.UserName, htmlAttributes:= New With { .class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(Function(model) model.UserName, New With { .htmlAttributes = New With { .class = "form-control" } })
+                    @Html.ValidationMessageFor(Function(model) model.UserName, "", New With { .class = "text-danger" })
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    End Using
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>
