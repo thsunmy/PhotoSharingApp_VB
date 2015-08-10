@@ -1,44 +1,46 @@
-﻿@ModelType RegisterViewModel
+﻿@ModelType PhotoSharingApplication.Models.RegisterModel 
 @Code
     ViewBag.Title = "Register"
 End Code
 
-<h2>@ViewBag.Title.</h2>
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>Create a new account.</h2>
+</hgroup>
 
-@Using Html.BeginForm("Register", "Account", FormMethod.Post, New With {.class = "form-horizontal", .role = "form"})
-
+@Using (Html.BeginForm())
     @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+@<text>
 
-    @<text>
-    <h4>Create a new account.</h4>
-    <hr />
-    @Html.ValidationSummary("", New With {.class = "text-danger"})
-    <div class="form-group">
-        @Html.LabelFor(Function(m) m.Email, New With {.class = "col-md-2 control-label"})
-        <div class="col-md-10">
-            @Html.TextBoxFor(Function(m) m.Email, New With {.class = "form-control"})
-        </div>
+    <div>
+        <span class="editor-label">
+    @Html.LabelFor(Function(m)  m.UserName)
+        </span>
+        <span class="editor-field">
+    @Html.TextBoxFor(Function(m) m.UserName, New With {.class = "text-box"})
+        </span>
     </div>
-    <div class="form-group">
-        @Html.LabelFor(Function(m) m.Password, New With {.class = "col-md-2 control-label"})
-        <div class="col-md-10">
-            @Html.PasswordFor(Function(m) m.Password, New With {.class = "form-control"})
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(Function(m) m.ConfirmPassword, New With {.class = "col-md-2 control-label"})
-        <div class="col-md-10">
-            @Html.PasswordFor(Function(m) m.ConfirmPassword, New With {.class = "form-control"})
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
-        </div>
-    </div>
-    </text>
-End Using
 
-@section Scripts
-    @Scripts.Render("~/bundles/jqueryval")
-End Section
+    <div>
+        <span class="editor-label">
+    @Html.LabelFor(Function(m)  m.Password)
+        </span>
+        <span class="editor-field">
+    @Html.PasswordFor(Function(m) m.Password, New With {.class = "text-box"})
+        </span>
+    </div>
+
+    <div>
+        <span class="editor-label">
+    @Html.LabelFor(Function(m)  m.ConfirmPassword)
+        </span>
+        <span class="editor-field">
+    @Html.PasswordFor(Function(m) m.ConfirmPassword, New With {.class = "text-box"})
+        </span>
+    </div>
+
+    <input type="submit" value="Register" />
+
+</text>
+End Using 

@@ -32,13 +32,21 @@ Namespace Controllers
         End Function
 
         ' GET: Photo/Create
+        <Authorize()>
         Function Create() As ActionResult
-            Return View()
+
+            Dim newPhoto As New Photo()
+            newPhoto.CreatedDate = DateTime.Today
+            Return View("Create", newPhoto)
+
+
+            ' Return View()
         End Function
 
         ' POST: Photo/Create
         'To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         'more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        <Authorize()>
         <HttpPost()>
         <ValidateAntiForgeryToken()>
         Function Create(<Bind(Include:="PhotoID,Title,PhotoFile,ImageMimeType,Description,CreatedDate,UserName")> ByVal photo As Photo) As ActionResult
@@ -77,6 +85,7 @@ Namespace Controllers
         End Function
 
         ' GET: Photo/Delete/5
+        <Authorize()>
         Function Delete(ByVal id As Integer?) As ActionResult
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
@@ -89,6 +98,7 @@ Namespace Controllers
         End Function
 
         ' POST: Photo/Delete/5
+        <Authorize()>
         <HttpPost()>
         <ActionName("Delete")>
         <ValidateAntiForgeryToken()>
